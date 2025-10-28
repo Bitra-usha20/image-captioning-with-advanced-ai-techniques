@@ -24,11 +24,11 @@ nlp = spacy.load("en_core_web_sm")
 # Wikipedia API with custom user-agent
 wiki_wiki = wikipediaapi.Wikipedia(
     language='en',
-    user_agent='ImageCaptioningApp/1.0 (sasikumarbobbili@gmail.com)'
+    user_agent='ImageCaptioningApp/1.0 (#give your gmail )'
 )
 
 # Google Custom Search API Configuration
-API_KEY = "AIzaSyBAmdoIK0n843ttb1N0Q20JjNFh8ytKS_0"
+API_KEY =#have to keep your api key 
 SEARCH_ENGINE_ID = "60f7f700474694ae5"
 
 def generate_caption(image):
@@ -120,6 +120,7 @@ if image is not None:
                     st.write("No image or reference found.")
 else:
     st.info("Please upload an image to generate a caption and insights.")
+
 
 
 
